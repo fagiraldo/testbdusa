@@ -15,7 +15,7 @@
     
     <servlet>
         <servlet-name>Login</servlet-name>
-        <servlet-class>controlador.Login</servlet-class>
+        <servlet-class>com.daniel.controller.Login</servlet-class>
     </servlet>
     
     <servlet>

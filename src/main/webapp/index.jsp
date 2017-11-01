@@ -11,6 +11,11 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>Test Heroku WEBAPP</div>
+        <div>Formulario de Autenticacion</div>
+        <form action="Login" method="POST">
+            Usuario <input type="text" name="usuario"/>
+            Contrasena <input type="text" name="pass"/>
+            <input type="submit" name="submit"/> 
+        </form>
     </body>
 </html>

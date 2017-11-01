@@ -13,10 +13,7 @@
         <welcome-file>default.jsp</welcome-file>
     </welcome-file-list>
     
-    <servlet>
-        <servlet-name>Login</servlet-name>
-        <servlet-class>com.daniel.controller.Login</servlet-class>
-    </servlet>
+   
     
     <servlet>
         <description></description>
@@ -29,10 +26,7 @@
         <url-pattern>/UserController</url-pattern>
     </servlet-mapping>
     
-    <servlet-mapping>
-        <servlet-name>Login</servlet-name>
-        <url-pattern>/Login</url-pattern>
-    </servlet-mapping>
+   
     
   
 </web-app>

@@ -102,21 +102,15 @@ public class Login extends HttpServlet {
             sesionUsuario.setMaxInactiveInterval(20);
             response.sendRedirect("index.jsp");
           }else{
-             response.sendRedirect("error.jsp");
+             request.setAttribute("Error", "Revisar usuario/ pass");
+             RequestDispatcher rq =  request.getRequestDispatcher("index.jsp");
+             rq.forward(request, response);
           }
          
         }else{
           response.sendRedirect("indexUser.jsp");
         }        
-        
-        if(sesion !=null){
-           
-        }else{
-          request.setAttribute("Error", "Revisar usuario/ pass");
-          RequestDispatcher rq =  request.getRequestDispatcher("index.jsp");
-          rq.forward(request, response);
-        }
-        
+              
     }
 
     /**
